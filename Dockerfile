@@ -1,4 +1,4 @@
-FROM ruby:2.6-dev
+FROM wodby/ruby:2.6-dev
 
 # Needed to run S3 Website Gem 
 RUN sudo apt-get install --assume-yes openjdk-7-jre 
