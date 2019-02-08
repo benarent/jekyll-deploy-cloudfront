@@ -18,9 +18,9 @@ workflow "Deploy Jekyll" {
 }
 
 action "Deploy Jekyll" {
-  uses = "BryanSchuetz/jekyll-deploy-gh-pages/deploy@master"
-  secrets = ["GITHUB_TOKEN"]
-  needs = "BryanSchuetz/jekyll-deploy-gh-pages/build@master"
+  uses = "benarent/jekyll-deploy-cloudfront/deploy@master"
+  secrets = ["S3ID", "S3SECRET"]
+  needs = "benarent/jekyll-deploy-cloudfront/build@master"
 }
 ```
 
