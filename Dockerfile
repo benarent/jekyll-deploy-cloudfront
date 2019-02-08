@@ -1,4 +1,4 @@
-FROM circleci/2.6.1-node-browsers-legacy
+FROM circleci/ruby:2.6.1-node-browsers-legacy
 
 # Needed to run S3 Website Gem 
 # RUN sudo apt-get install --assume-yes openjdk-7-jre 
