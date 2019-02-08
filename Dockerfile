@@ -1,4 +1,7 @@
-FROM ruby:2.6.1
+FROM ruby:2.6.1 -dev
+
+# Needed to run S3 Website Gem 
+RUN sudo apt-get install --assume-yes openjdk-7-jre 
 
 # Set default locale for the environment
 ENV LC_ALL C.UTF-8
