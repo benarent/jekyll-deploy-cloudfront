@@ -14,6 +14,6 @@ LABEL "repository"="https://github.com/benarent/jekyll-deploy-cloudfront"
 
 ADD entrypoint.sh /entrypoint.sh
 # Needed to run S3 Website Gem 
-RUN sudo apt-get install --assume-yes openjdk-7-jre 
+RUN apt-get install --assume-yes openjdk-7-jre 
 
 ENTRYPOINT ["/entrypoint.sh"]
