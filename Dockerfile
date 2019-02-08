@@ -1,5 +1,5 @@
 FROM ruby:2.6
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+RUN apt-get update -qq && apt-get install -y nodejs openjdk-7-jre
 
 # Set default locale for the environment
 ENV LC_ALL C.UTF-8
