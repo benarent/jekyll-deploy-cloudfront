@@ -1,7 +1,7 @@
-FROM wodby/ruby:2.6-dev
+FROM circleci/2.6.1-node-browsers-legacy
 
 # Needed to run S3 Website Gem 
-RUN sudo apt-get install --assume-yes openjdk-7-jre 
+# RUN sudo apt-get install --assume-yes openjdk-7-jre 
 
 # Set default locale for the environment
 ENV LC_ALL C.UTF-8
